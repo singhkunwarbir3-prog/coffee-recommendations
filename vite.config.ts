@@ -12,4 +12,8 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
+  // Override the default Cloudflare preset to node-server for Render.com deployment
+  nitro: {
+    preset: "node-server",
+  },
 });
