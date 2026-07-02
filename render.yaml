@@ -2,7 +2,7 @@ services:
   - type: web
     name: coffee-recommendations
     runtime: node
-    buildCommand: npm install && npm run build
+    buildCommand: npm install --include=dev && npm run build
     startCommand: node .output/server/index.mjs
     envVars:
       - key: NODE_ENV
